@@ -1,8 +1,5 @@
 from FixNum import FixNum
 
-%load_ext autoreload
-%autoreload 2
-
 userinput = input("Number of decimal places (default 2): ")    
 prec = int(userinput) if userinput else 2
 def Menu():
