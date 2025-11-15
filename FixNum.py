@@ -24,7 +24,7 @@ class FixNum:
             return f"-{self.a}.{str(self.b).zfill(self.prec)}"
         else:
             return f"{self.a}.{str(self.b).zfill(self.prec)}"
-# Delete the below part if appropriate     
+# Task 0. Delete the below part if appropriate     
     def __add__(self, num2):
         x = (float(self) * 10**self.prec)*self.s
         y = (float(num2) * 10**self.prec)*num2.s
@@ -39,7 +39,7 @@ class FixNum:
         b = round(result % 10**self.prec)
         print(a, b)         
         return FixNum(self.prec, self.s, a, b)
-# Delete the below part if appropriate
+# Task 1. Delete the below part if appropriate
     def __sub__(self, num2):
         x = (float(self) * 10**self.prec)*self.s
         y = (float(num2) * 10**self.prec)*num2.s
@@ -54,7 +54,7 @@ class FixNum:
         b = round(result % 10**self.prec)
         print(a, b)         
         return FixNum(self.prec, self.s, a, b)
-# Delete the below part if appropriate
+# Task 2. Delete the below part if appropriate
     def __mul__(self, num2):
         x = (float(self) * 10**self.prec)*self.s
         y = (float(num2) * 10**self.prec)*num2.s
